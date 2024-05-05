@@ -78,7 +78,6 @@ h2{
 .home{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 95px;
     width: 112%;
     top: 100%;
     padding: 125px;
