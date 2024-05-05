@@ -1,0 +1,418 @@
+body{
+    background-color: #1B1B1B;
+    height: auto;
+}
+
+.navbar{
+    font-family: "Jersey 25", sans-serif;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    transition: top 0.3s;
+    background-color: #1B1B1B !important;
+}
+
+
+.navbar-brand{
+    color: white;
+}
+
+.navbar.hidden {
+    top: -100px;
+}
+
+.nav-link{
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.buttons{
+    padding: 50px;
+}
+
+.btn{
+    background-color: #50CAFF;
+    
+}
+
+.btn-primary{
+    font-family: "Jersey 25", sans-serif;
+}
+
+.btn-lg{
+    color: #1B1B1B;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+h1{
+    color: gold;
+    text-align: left;
+    font-family: 'Press Start 2P', sans-serif;
+    font-weight: 300;
+    font-size: 90px;
+    animation: blink 1s infinite;
+}
+
+h2{
+    color: azure;
+    text-align: left;
+    font-family: "Jersey 25", sans-serif;
+    font-size: 40px;
+}
+
+.gold{
+    color: gold;
+}
+
+.home{
+    display: flex;
+    margin-top: 95px;
+    width: 112%;
+    top: 150%;
+    padding: 125px;
+    position: relative;
+    border-bottom: 35px solid transparent;
+    border-image: url('./assets/images/conspix.png') 35 repeat;
+    background-image: url('./assets/images/spacebg.gif');
+    background-size: 100%;
+}
+
+.home > img{
+    margin-left: 100px;
+    height: 200px;
+    width: 200px;
+    float: left;
+    border: 5px solid #50CAFF;
+    border: 15px solid transparent;
+    border-image: url('./assets/images/border2.png') 100 repeat;
+}
+
+.intro-text {
+    margin-left: 50px;
+    text-align: left;
+    color: white;
+}
+
+
+#about{
+    display: flex;
+    width: 112%;
+    top: 150%;
+    padding: 100px;
+    margin-bottom: 30px;
+    position: relative;
+    border-bottom: 5px solid white;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('./assets/images/palnet.gif');
+    background-size: 100%;
+    border-bottom: 35px solid transparent;
+    border-image: url('./assets/images/conspix.png') 35 repeat;
+}
+
+
+#about > h1{
+    font-size: 80px;
+    animation: blink 1s infinite;
+    font-family: "Jersey 25", sans-serif;
+}
+
+#about > .aboutA > p{
+    background-color: #1B1B1B;
+    color: white;
+    font-size: 25px;
+    font-family: "Jersey 25", sans-serif;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 30px solid transparent;
+    border-image: url('./assets/images/border2.png') 100 repeat;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+    font-family: "Jersey 25", sans-serif;
+    text-align: justify;
+    padding: 20px;
+}
+
+
+#about > .cap >img{
+    position: absolute;
+    height: auto;
+    width: 200px;
+    right: 1%;
+    top: 70%;
+}
+
+#skills{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    width: 112%;
+    top: 145%;
+    position: relative;
+    flex-direction: column;
+    border-bottom: 5px solid white;
+    border-bottom: 35px solid transparent;
+    border-image: url('./assets/images/conspix.png') 35 repeat;
+    background-image: url('./assets/images/galax.gif');
+    background-size: 100%;
+}
+
+#skills > h1{
+    font-size: 70px;
+    font-family: "Jersey 25", sans-serif;
+}
+
+#skills > ul{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 0%;
+    width: 600px;
+    border: 20px solid white;
+    border-bottom: 20px solid transparent;
+    border-image: url('./assets/images/border2.png') 100 repeat;
+}
+
+.css{
+    display: flex;
+    flex-direction: row;
+    height: 65px;
+    background-color: #1B1B1B;
+    border: 5px solid white;
+}
+
+#skills > ul> .css > img{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+.java{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    background-color: #1B1B1B;
+    border: 5px solid white;
+}
+
+#skills > ul> .java > img{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+.html{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    background-color: #1B1B1B;
+    border: 5px solid white;
+}
+
+#skills > ul> .html > img{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+.ece{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    background-color: #1B1B1B;
+    border: 5px solid white;
+}
+
+#skills > ul> .ece > img{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+.team{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    background-color: #1B1B1B;
+    border: 5px solid white;
+}
+
+#skills > ul> .team > img{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+.timema{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    background-color: #1B1B1B;
+    border: 5px solid white;
+}
+
+#skills > ul> .timema > img{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+.depre{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    background-color: #1B1B1B;
+    border: 5px solid white;
+}
+
+#skills > ul> .depre > img{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+#skills > .cap1 >img{
+    position: absolute;
+    height: auto;
+    width: 200px;
+    right: 1%;
+    top: 74%;
+}
+
+#skills > .cap2 >img{
+    position: absolute;
+    height: auto;
+    width: 200px;
+    right: 80%;
+    top: 74%;
+}
+
+#contacts{
+    padding-top: 80px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    width: 112%;
+    top: 145%;
+    position: relative;
+    flex-direction: column;
+    border-bottom: 5px solid white;
+    border-bottom: 35px solid transparent;
+    border-image: url('./assets/images/conspix.png') 35 repeat;
+    background-image: url('./assets/images/peps.gif');
+    background-size: 100%;
+}
+
+#contacts > h1{
+    font-size: 70px;
+    font-family: "Jersey 25", sans-serif;
+}
+
+#contacts > .cont0{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+#contacts > .cont0 > .contA{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    border: 30px solid white;
+    border-bottom: 40px solid transparent;
+    border-image: url('./assets/images/border2.png') 100 repeat;
+    margin-bottom: 40px;
+}
+
+#contacts > .cont0 > .contB{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 30px solid white;
+    border-bottom: 40px solid transparent;
+    border-image: url('./assets/images/border2.png') 100 repeat;
+    margin-bottom: 40px;
+}
+
+
+#contacts > .cont0 > .contA > a > img{
+    height: 100px;
+    width: auto;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#contacts > .cont0 > .contA > a > img:hover {
+    transform: scale(1.5);
+}
+
+#contacts > .cont0 > .contB > .gmail{
+    display: flex;
+    flex-direction: row;
+}
+
+#contacts > .cont0 > .contB > .phone{
+    display: flex;
+    flex-direction: row;
+}
+
+#contacts > .cont0 > .contB > .gmail > img{
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#contacts > .cont0 > .contB > .gmail > img:hover {
+    transform: scale(1.5);
+}
+
+#contacts > .cont0 > .contB > .phone > img{
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#contacts > .cont0 > .contB > .phone > img:hover {
+    transform: scale(1.5);
+}
+
+#contacts > .cont0 > .contB > .gmail > p{
+    color: #1B1B1B;
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: "Jersey 25", sans-serif;
+}
+
+#contacts > .cont0 > .contB > .phone > p{
+    color: #1B1B1B;
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: "Jersey 25", sans-serif;
+}
+
+#contacts > .cap3 > img{
+    position: absolute;
+    height: auto;
+    width: 200px;
+    right: 10%;
+    top: 69%;
+}
